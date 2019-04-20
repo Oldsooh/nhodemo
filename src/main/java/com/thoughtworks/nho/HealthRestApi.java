@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.thoughtworks.nho.dao.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -22,8 +23,8 @@ public class HealthRestApi {
     }
 
     @GetMapping("/users")
-    public String users(){
-        return JSON.toJSONString(userDao.listAll());
+    public ResponseMessage users(){
+       return ResponseMessage.error(500,"cuowuwxasaasa");
     }
 
 }
