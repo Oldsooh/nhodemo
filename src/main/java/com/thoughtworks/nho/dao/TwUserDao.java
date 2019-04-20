@@ -1,7 +1,6 @@
 package com.thoughtworks.nho.dao;
 
 import com.thoughtworks.nho.model.TwUser;
-import com.thoughtworks.nho.model.User;
 import org.apache.ibatis.annotations.Param;
 
 public interface TwUserDao {
@@ -19,4 +18,6 @@ public interface TwUserDao {
 
     Integer checkIdentity(@Param("username")String username   , @Param("password")String password);
 
+
+    TwUser selectUserByUsername(@Param("username")String username);
 }
