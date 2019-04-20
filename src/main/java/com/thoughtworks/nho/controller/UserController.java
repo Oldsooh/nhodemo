@@ -5,14 +5,17 @@ import com.thoughtworks.nho.ResponseMessage;
 import com.thoughtworks.nho.model.RegisterRequestVO;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class UserController {
 
-    @PostMapping()
-    public ResponseMessage login(){
+
+
+    @PostMapping("/login")
+    public ResponseMessage login(@RequestParam("userName") String userName, @RequestParam("password") String password)throws Exception {
+
         return null;
     }
 
