@@ -1,6 +1,7 @@
 package com.thoughtworks.nho;
 
 import com.alibaba.fastjson.JSON;
+import com.thoughtworks.nho.auth.NoLogin;
 import com.thoughtworks.nho.dao.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,8 +24,11 @@ public class HealthRestApi {
     }
 
     @GetMapping("/users")
+    @NoLogin
     public ResponseMessage users(){
        return ResponseMessage.error(500,"cuowuwxasaasa");
     }
+
+
 
 }
