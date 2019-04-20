@@ -129,4 +129,9 @@
   <select id="checkIdentity" resultType="java.lang.Integer">
         select count(id) from tw_user where username = #{username,jdbcType=VARCHAR} and  password =#{password,jdbcType=VARCHAR};
     </select>
+
+
+  <select id="selectUserByUsername" resultMap="BaseResultMap">
+    select * from tw_user where username=#{username}
+  </select>
 </mapper>
