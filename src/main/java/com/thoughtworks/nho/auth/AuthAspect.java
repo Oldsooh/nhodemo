@@ -50,7 +50,7 @@ public class AuthAspect {
 
         String authHeader= request.getHeader("Authorization");
         if (StringUtils.isEmpty(authHeader)){
-            return ResponseMessage.error("请登录后再试。");
+            throw new Exception("请登录后再试！");
         }
         String url = request.getRequestURL().toString();
         String method = request.getMethod();
