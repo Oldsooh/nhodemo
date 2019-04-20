@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.thoughtworks.nho.dao.UserDao">
+
+    <select id="listAll" resultType="com.thoughtworks.nho.model.User">
+        select * from tw_user
+    </select>
+
+</mapper>
