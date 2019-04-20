@@ -5,7 +5,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://kn.letters7.com:33308/twu?characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://kn.letters7.com:33308/twu?characterEncoding=utf-8&useSSL=false&zeroDateTimeBehavior=convertToNull
     username: wuchenl
     password: g20130817!
     driverClassName: com.mysql.cj.jdbc.Driver
